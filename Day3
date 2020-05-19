@@ -1,14 +1,6 @@
 #10 May, 11am
 #Final Project Day 3
 
-I started on and finished around half of the options for the odd section. When I was previously working on the even section, I
-decided to not include an option; however when I started on the odd section I decided that it would've been a good addition and
-included it here. I ran into a few troubles in this section as I tried to incorporate the elif statement and at the end noticed
-a few syntax errors that were displayed. I've also noticed that using so many if statements eventually get confusing - I thought
-that another possible way of doing my project is using a list but I decided that since I've already committed so much work time
-to using if and else statements I might as well just finish it this way. I finished this work section not knowing how to fix my
-syntax errors and I decided to do extra research next session to solve these problems. The code that I've done today is below:
-
 #Charles Wu
 #FinalProject.py
 #Telling a story from user input
