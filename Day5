@@ -1,14 +1,6 @@
 #17 May, 9pm
 #Final Project Day 5
 
-Today I changed some stories and refined the presentation and story lines. I attempted to make the stories more interesting and
-I added indentations and question marks and other necessary changes to improve the program. After running it a few times in 
-terminal, I've noticed that whenever the user is asked to input something it would always be right next to the prompt, thus I
-added indents to fix that issue. Even though this doesn't make a difference to the user of the program, I've also decided to 
-clean up the presentation of the code for whoever is reading it so everything looks smoother. I've added quotation marks to 
-each question so everything is more clear and just in general cleaned up my workspace and also the code that the user will see.
-My work so far is as seen below:
-
 #Charles Wu
 #FinalProject.py
 #Telling a story from user input
