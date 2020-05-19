@@ -1,14 +1,6 @@
 #15 May, 2pm
 #Final Project Day 4
 
-Today I tried to fix the issues from the previous day. There were some syntax around my if statements for the odd section and I
-did some research and troubleshooting to discover that the mistakes I made were quite careless ones. For the if statement, I 
-forgot to add the bracket and for the elif statement, I forgot to add the value next to it (for example elif ==2). I mainly
-just focused on troubleshooting and fixing some parts of the code that could have been improved. Probably the main roadblock 
-today was only locating which line the if and else statements were on - certain if and else statements are spread very far 
-apart due to the many choices in between them and aside from that most of the other work went pretty well. My odd section at 
-the end of this session was still not finished and I intend on doing that my next session. The work that I did today is below:
-
 (line 110-121) 
         if a == 1:
             print(phone)
