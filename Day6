@@ -1,0 +1,215 @@
+#May 19, 3pm
+#Final Project Day 6
+
+Today I finished up my odd section and added comments for the code. Afterwards, I was just mostly testing the code out and
+trying each possiblity for the story. I'm pretty happy with the final product and I'm glad that my story is improved and that
+everything functions fine. I've also added line breaks to my work to also improve the format and made sure that everything,
+including the code and the messages displayed looks good. My final product is below:
+
+#Charles Wu
+#FinalProject.py
+#Telling a story from user input
+
+phone = 'You turn on your phone and start scrolling through your notifications from the night before. Please input "1" for a phone game, input "2" to check the news, or "3" to listen to some music.'
+game = 'You open your newly downloaded flappy bird game and begin to try beating your high score of 32. You are a determined person and you refuse to give up. After 3 hours have passed, the highest score that you’ve reached is 7. You begin to become frustrated and your eyes begin hurting. But that won’t stop you, nothing and no one stops you. Insistent on beating your high score, days begin to pass and yet you have made no progress. Eventually from dehydration and hunger, you have died. \n \nFeel free to try again and explore alternative posibilities.'
+news = 'You open up the news and the top article is that Elon Musk is now sending cows from earth to the little town he created on Mars named Musktown. What will you do now? Input "1" to play a phone game or "2" to go make breakfast.'
+music = 'You connect your phone to the wireless speakers and you put your playlist on shuffle. Some soothing Frank Sinatra comes on, what a classic! What will you do now? Input "1" to play a phone game, or "2" to go on a jog.'
+jog = 'You put on your sports gear and lace up your brand new running shoes. You put in your earphones and go for a jog outside. As you are crossing the street, you’ve already fully embraced yourself in your loud rock music and you become oblivious to your surroundings. As you slowly jog past the civilian crossing, a car to your left is racing down the road. You were too zoned out in your music you never noticed the wreckless driver! A hit and run, you have died. \n \nFeel free to try again and explore alternative posibilities.'
+banana = 'You take out a few bananas and begin unpeeling them. After you take all 3 bananas out of their skin, you aim for the trashcan and throw the peels. After adding the needed ingredients in the smoothie, you realize that you forgot to add sugar and you head over to the pantry to retrieve it. Unknowingly, you actually missed the garbage bin with your banana peels; you slip on them, hitting your head on the edge of a counter. You have died. \n \nFeel free to try again and explore alternative posibilities.'
+apple = 'You blend up a lovely apple smoothie and you drink the whole thing! You are now full and content. What will you do now? Please input "1" to go for a jog or input "2" to go on your phone.'
+
+print('Welcome! This is an automatically generated story and the choices that you make will affect the outcome of the story. I will be attempting to kill you throughout and your goal is to choose to wisest option to stay alive. Please input the 1, 2, or 3 for when you are picking your choices. Good luck!')
+
+userinput = input('Please input any positive integer: ')        #Taking user input to decide which story will generate. Indentation is used in each input prompt just for better presentation.
+userinput = int(userinput)                                      #Turning string into an integer
+if userinput % 2 == 0:                                          #Checking if the value is even
+    print('You wake up in the morning at 10am on a beautiful Saturday and the sun outside is gleaming. For going to breakfast input "1", for going on your phone input "2".')  #Story begins
+    s = input('What will you be doing this morning? ')          #2nd question and the general process is similar. User can input 1 or 2 which will decide where this story continues to
+    s = int(s)
+    if s == 1:
+        print('You’ve decided to go to breakfast. You were craving a smoothie so what fruit will you choose to use? "1" for Banana or "2" for Apple.')
+        l = input('What fruit will you be using?  ')
+        l = int(l)
+        if l == 1:                                              #Option for the input of "1"
+            print(banana)                                       #The story doesn't continue on this line as they've picked an option that ends the story
+        else:                                                   #Option for the input of "2"
+            print(apple)                                        #All of these white texts are variables that have been assigned to a message at the start of the code
+            m = input('What will you do now? ')
+            m = int(m)
+            if m == 1:
+                print(jog)
+            else:
+                print(phone)
+                z = input('What will you do on your phone?  ')
+                z = int(z)
+                if z == 1:                                      #Option 1
+                    print(game)
+                elif z == 2:                                    #Option 2 -- 3 options here hence the use of the 'elif'
+                    print(news)
+                    y = input('What will you do now? ')
+                    y = int(y)
+                    if y == 1:
+                        print(game)
+                    else: 
+                        print('You’ve decided to go eat breakfast. You were craving a smoothie, what fruit will you use in your smoothie? "1" for Banana or "2" for Apple.')
+                        w = input('What fruit will you be using? ')
+                        w = int(w)
+                        if w == 1:
+                            print(banana)
+                        else:
+                            print('Congratulations. Most people who have played this game has likely died by now. Believe it or not but the probability of you ending up seeing this text is 1.5%. \n\nFeel free to start again to explore other posibilities') #Line cuts for presentation
+                else:                                           #Option 3 of the above statement of 'if z == 1'
+                    print(music)
+                    v = input('What is next? ')
+                    v = int(v)
+                    if v==1:
+                        print(game)
+                    else:
+                        print(jog)
+    else:                                                       #2nd option of the initial prompt for even numbers
+        print(phone)
+        r = input('What will you do on your phone? ')
+        r = int(r)
+        if r == 1:
+            print(game)
+        elif r == 2:
+            print(news)
+            y = input('What will you do now? ')
+            y = int(y)
+            if y == 1:
+                print(game)
+            else: 
+                print('You’ve decided to go to breakfast. You were craving a smoothie, what fruit will you use in your smoothie? "1" for Banana or "2" for Apple.')
+                w = input('What fruit will you be using? ')
+                w = int(w)
+                if w == 1:
+                    print(banana)
+                else:
+                    print(apple)
+                    m = input('What will you do now? ')
+                    m = int(m)
+                    if m == 1:
+                        print(jog)
+                    else:
+                        print(phone)
+                        z = input('What will you do on your phone? ')
+                        z = int(z)
+                        if z == 1:
+                            print(game)
+                        elif z == 2:
+                            print(news)
+                            y = input('What will you do now? ')
+                            y = int(y)
+                            if y == 1:
+                                print(game)
+                            else:
+                                print('Congratulations. You may or may not have noticed that picking the same safe options will eventually lead you to this print screen, well done on surviving. \n\nRetry and see if you can find all the possible endings!')
+                        else:
+                            print('Congratulations. I did not expect you to make it so far. You have survived and this is unfortunately the end of the story. \n\nFeel free to relaunch the program and try again.')
+
+else:                                                           #This code generates if the user picks an odd number to begin with: The rest of the code takes a similar general form
+    print('You wake up in the morning at 10am on a gloomy Saturday and the rain is pouring. What is the first thing you will do this morning go back to bed or go on your phone')
+    q = input('What should you do next? ')                      #This is the part that differs frome even numbers as you are given a new option which is to 'go back to bed'
+    q = int(q)
+    if q == 1:
+        print('You lay back in your pillow and slowly doze off into deep slumber. You dream about cows getting flown to Mars in a rocket. What a sight! You wake up again at 1pm and it’s currently overcast outside. Input "1" to go on your phone or input "2" to go for a jog')
+        a = input('What should you do after your nap? ')
+        a = int(a)
+        if a == 1:
+            print(phone)
+            b = input('What will you do on your phone? ')
+            b = int(b)
+            if b == 1:
+                print(game)
+            elif b == 2:
+                print(news)
+                y = input('What will you do now? ')
+                y = int(y)
+                if y == 1:
+                    print(game)
+                else: 
+                    print('You’ve decided to go to breakfast. You were craving a smoothie, what fruit will you use in your smoothie? "1" for Banana or "2" for Apple')
+                    w = input('What fruit will you be using? ')
+                    w = int(w)
+                    if w == 1:
+                        print(banana)
+                    else:
+                        print(apple)
+                        m = input('What will you do now?  ')
+                        m = int(m)
+                        if m == 1:
+                            print(jog)
+                        else:
+                            print(phone)
+                            z = input('What will you do on your phone? ')
+                            z = int(z)
+                            if z == 1:
+                                print(game)
+                            elif z == 2:
+                                print(news)
+                                y = input('What will you do now? ')
+                                y = int(y)
+                                if y == 1:
+                                    print(game)
+                                else:
+                                    print('You have survived the story, great job! \n\nTry again and test some other possibilities')
+                            else:
+                                print('Congratulations. I did not expect you to make it so far. You have survived and this is the end of the story. \n\nTry some other possibilities')
+            else:
+                print(music)
+                v = input('What is next? ')
+                v = int(v)
+                if v == 1:
+                    print(game)
+                else:
+                    print(jog)
+        else:
+            print(jog)
+    else:                                                       #Though the user is given new choices it mostly revolves around the same storyline.
+        print(phone)
+        b = input('What will you do on your phone? ')
+        b = int(b)
+        if b == 1:
+            print(game)
+        elif b == 2:
+            print(news)
+            y = input('What will you do now? ')
+            y = int(y)
+            if y == 1:
+                print(game)
+            else: 
+                print('You’ve decided to go to breakfast. You were craving a smoothie, what fruit will you use in your smoothie? "1" for Banana or "2" for Apple')
+                w = input('What fruit will you be using? ')
+                w = int(w)
+                if w == 1:
+                    print(banana)
+                else:
+                    print(apple)
+                    m = input('What will you do now?  ')
+                    m = int(m)
+                    if m == 1:
+                        print(jog)
+                    else:
+                        print(phone)
+                        z = input('What will you do on your phone? ')
+                        z = int(z)
+                        if z == 1:
+                            print(game)
+                        elif z == 2:
+                            print(news)
+                            y = input('What will you do now? ')
+                            y = int(y)
+                            if y == 1:
+                                print(game)
+                            else:
+                                print('You have survived the story, great job! \n\nTry again and test some other possibilities')
+                        else:
+                            print('Congratulations. I did not expect you to make it so far. You have survived and this is the end of the story. \n\nTry some other possibilities')
+        else:
+            print(music)
+            v = input('What is next? ')
+            v = int(v)
+            if v == 1:
+                print(game)
+            else:
+                print(jog)
