@@ -1,17 +1,6 @@
 #May 8, 3pm
 #Story Project Day 2
 
-Today I've started with my coding and focused on the even section. I've decided that with the story I intend on telling,
-writing 2 stories is more suitable and more achievable than coming up with 5 different stories so I incorporated a bit of code
-which basically devides the value by 2 and gives you the remainder (the '%' operator). I also decided that using if statements
-would be the best way for me to code my story. Originally a roadblock that I faced was how lengthy the code was becoming; I 
-turned out to have a lot more writing than anticipated and copying and pasting down each story for each print command was
-causing my work to be quite messy and organized. To solve this, I had to delete all of the places where I copy and pasted bits
-of the story and create string variables at the top of the document which are assigned to the text that will print. I think
-I've got the general jist gist down and it will just take some time and refining in the following days to complete my project.
-The code that I have so far is as follows: 
-
-
 #Charles Wu
 #FinalProject.py
 #Telling a story from user input
